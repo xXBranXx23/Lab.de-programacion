@@ -1,0 +1,16 @@
+import tkinter
+
+def botonsito():
+    texto = cuadro.get()
+    print(texto)
+
+
+ventana = tkinter.Tk() 
+ventana.title("lista de tareas")
+ventana.geometry("400x300")
+boton = tkinter.Button(ventana, text="Prueba", command=botonsito)
+cuadro = tkinter.Entry(ventana)
+cuadro.pack()
+boton.pack()
+ventana.mainloop()
+ 
